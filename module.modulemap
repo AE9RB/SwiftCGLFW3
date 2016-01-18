@@ -3,14 +3,13 @@ module CGLFW3 [system] {
     link "glfw3"
     export *
 
-    module Linux {
-        link "X11"
-        link "Xxf86vm"
-        link "Xrandr"
-        link "Xi"
-        link "Xinerama"
-        link "Xcursor"
-    }
+/* Linux may require this:
+    link "X11"
+    link "Xxf86vm"
+    link "Xrandr"
+    link "Xi"
+    link "Xinerama"
+    link "Xcursor"
+*/
 
 }
-
